@@ -33,7 +33,7 @@ export function TaskList() {
     const newTasks = tasks.map(task => task.id == id ? {
       ...task,
       isComplete: !task.isComplete
-    } : task);
+    } : task)
     
     setTasks(newTasks)
   }
